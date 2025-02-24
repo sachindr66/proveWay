@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle & Save</title>
+    <link rel="stylesheet" href="./proveWay.css">      
+</head>
+<body>
+    <div class="container">
+        <div class="title">Bundle & Save</div>
+        <div class="card" onclick="selectBox(this, 195)">
+          <div class="card_header">
+            <input type="radio" name="bundle">
+            <div class="pair_badge">
+              <span class="pair">1 Pair <span class="discount-badge">50% Off</span></span>
+              <strong>DKK 195.00</strong>
+            </div>
+          </div>
+          <div class="options">
+              <label>#1: <select onchange="changeSize(event, this)"><option value="normal" selected>Normal</option><option value="small">S</option><option value="medium">M</option><option value="large">L</option></select> 
+              <select onchange="changeColor(event, this)"><option value="white" selected>Default</option><option value="lightblue">Light Blue</option><option value="red">Red</option><option value="green">Green</option><option value="purple">Purple</option></select></label><br>
+          </div>
+          <div class="options">
+            <label>#1: <select onchange="changeSize(event, this)"><option value="normal" selected>Normal</option><option value="small">S</option><option value="medium">M</option><option value="large">L</option></select> 
+            <select onchange="changeColor(event, this)"><option value="white" selected>Default</option><option value="lightblue">Light Blue</option><option value="red">Red</option><option value="green">Green</option><option value="purple">Purple</option></select></label><br>
+        </div>
+        </div>
+        <div class="card" onclick="selectBox(this, 345)">
+          <div class="card_header">
+              <input type="radio" name="bundle">
+              <div class="pair_badge">
+                <span class="pair">2 Pair <span class="discount-badge">40% Off</span></span>
+                <span class="most-popular">Most Popular</span>
+                <strong>DKK 245.00</strong>
+              </div>
+            </div>
+            <div class="options">
+                <label>#1: <select onchange="changeSize(event, this)"><option value="normal" selected>Normal</option><option value="small">S</option><option value="medium">M</option><option value="large">L</option></select> 
+                <select onchange="changeColor(event, this)"><option value="white" selected>Default</option><option value="lightblue">Light Blue</option><option value="red">Red</option><option value="green">Green</option><option value="purple">Purple</option></select></label><br>
+            </div>
+            <div class="options">
+              <label>#1: <select onchange="changeSize(event, this)"><option value="normal" selected>Normal</option><option value="small">S</option><option value="medium">M</option><option value="large">L</option></select> 
+              <select onchange="changeColor(event, this)"><option value="white" selected>Default</option><option value="lightblue">Light Blue</option><option value="red">Red</option><option value="green">Green</option><option value="purple">Purple</option></select></label><br>
+          </div>
+        </div>
+        <div class="card active" onclick="selectBox(this, 528)">
+          <div class="card_header">
+            <input type="radio" name="bundle" checked>
+            <div class="pair_badge">
+              <span class="pair">3 Pair <span class="discount-badge">60% Off</span></span>
+              <strong>DKK 528.00 </strong>
+            </div>
+          </div> 
+             <div class="options">
+                <label>#1: <select onchange="changeSize(event, this)"><option value="normal" selected>Normal</option><option value="small">S</option><option value="medium">M</option><option value="large">L</option></select> 
+                <select onchange="changeColor(event, this)"><option value="white" selected>Default</option><option value="lightblue">Light Blue</option><option value="red">Red</option><option value="green">Green</option><option value="purple">Purple</option></select></label><br>
+            </div>
+            <div class="options">
+              <label>#1: <select onchange="changeSize(event, this)"><option value="normal" selected>Normal</option><option value="small">S</option><option value="medium">M</option><option value="large">L</option></select> 
+              <select onchange="changeColor(event, this)"><option value="white" selected>Default</option><option value="lightblue">Light Blue</option><option value="red">Red</option><option value="green">Green</option><option value="purple">Purple</option></select></label><br>
+          </div>
+            
+        </div>
+        <div class="checkout">
+            <p class="shipping">Free 2 Day Shipping</p>
+            <p class="total">Total: <strong>DKK 360.00</strong></p>
+            <button class="add-to-cart">+ Add to Cart</button>
+        </div>
+    </div>
+    <script src="./proveWay.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  min-height: 100vh;
+}
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  border: 2px solid #008000;
+}
+
+
+.title {
+  color: #008000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.card {
+  border: 2px solid #ddd;
+  padding: 14px;
+  margin: 20px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  background: white;
+}
+
+.card_header{
+  display: flex;
+  gap: 10px;
+}
+
+.pair_badge{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pair{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.discount-badge {
+  background: #008000;
+  color: white;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.card.active {
+  border-color: #008000;
+  background: #f0fff0;
+}
+
+.card:hover {
+  border-color: #008000;
+  background: #f0fff0;
+}
+
+.most-popular {
+  position: absolute;
+  top: -12px;
+  right: 10px;
+  background: #008000;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.options {
+  display: none;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: left;
+}
+.card.active .options {
+  display: block;
+}
+.checkout {
+  text-align: center;
+  margin-top: 20px;
+}
+.add-to-cart {
+  background: #008000;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+.shipping, .total {
+  font-size: 14px;
+  color: #008000;
+  font-weight: bold;
+}
